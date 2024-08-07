@@ -1,0 +1,110 @@
+body,html
+{
+    background: rgb(190, 185, 185);
+}
+.title-big{
+
+    color: rgb(0, 0, 0);
+    font-size: 96px;
+    letter-spacing: 54px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    animation: moveUp 1s forwards;
+    position: relative;
+    top: 80px; /* 设置初始位置 */
+}
+.title-small
+{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    letter-spacing: 29px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    animation: moveUp 1s forwards;
+    position: relative;
+    top: 40px; /* 设置初始位置 */
+}
+.dtl
+{
+    position: absolute;
+    width: 1031.05px;
+    left: 400px;
+    margin-top: -3%;
+    border: 1px solid rgb(146, 146, 146);
+    animation: fadeIn 2s forwards;
+}
+.div-1
+{
+    animation: fadeIn 2s forwards;
+}
+.round-r1
+{
+    border-radius: 30px;
+    background: rgba(146, 146, 146, 0.397);
+    width: 900px;
+    height: 400px;
+    margin-left: 25%;
+}
+.round-r2
+{
+    border-radius: 30px;
+    background: rgba(146, 146, 146, 0.397);
+    width: 900px;
+    height: 270px;
+    margin-left: 25%;
+}
+.text-title
+{
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    position: relative;
+    top: 35px;
+}
+.button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 8px;
+	background: rgb(146, 146, 146);
+    width: 700px;
+    position: relative;
+    left: 70px;
+    top: 50px;
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+.button:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+.button-text
+{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 8px;
+}
+@keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100px);
+    }
+  }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
